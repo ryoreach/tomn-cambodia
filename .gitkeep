@@ -1,0 +1,13 @@
+$folders = @(
+    "frontend",
+    "backend",
+    "ai-service",
+    "database",
+    "assets/brand",
+    "docs/diagrams",
+    "tests"
+)
+
+foreach ($folder in $folders) {
+    New-Item -ItemType File -Force -Path "$folder/.gitkeep"
+}
